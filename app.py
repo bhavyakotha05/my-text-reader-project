@@ -10,8 +10,6 @@ import shutil
 import datetime
 import glob
 
-# Tesseract path
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 app = Flask(__name__)
 
@@ -133,4 +131,5 @@ if __name__ == '__main__':
     if not os.path.exists(STATIC_FOLDER):
         os.makedirs(STATIC_FOLDER)
         
+
     app.run(host='0.0.0.0', port=5000, debug=True)
